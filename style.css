@@ -1,0 +1,480 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #222;
+    padding-top: 75px;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 100%;
+    height: 75px;
+
+    background-color: #111827;
+
+    z-index: 1000;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav-container{
+    width: 90%;
+    max-width: 1200px;
+
+    height: 75px;
+
+    margin: auto;
+
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+
+    right: 0;
+    top: 25px;
+
+    color: white;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    position: absolute;
+
+    left: 0;
+    top: 28px;
+}
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 25px;
+
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #fbbf24;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 200px;
+    padding: 120px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #312e81,
+        #7c3aed,
+        #db2777
+    );
+
+    color: white;
+}
+
+.hero-badge {
+    display: inline-block;
+
+    background-color: #fbbf24;
+
+    color: #111827;
+
+    padding: 10px 20px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: 55px;
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+
+    width: 70%;
+
+    margin: 0 auto 30px;
+
+    line-height: 1.8;
+}
+
+.hero-button {
+    display: inline-block;
+
+    background-color: white;
+
+    color: #6d28d9;
+
+    padding: 15px 35px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background-color: #fbbf24;
+
+    color: #111827;
+}
+
+
+/* ================= PRODUCTS ================= */
+
+.products-section {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 70px auto;
+}
+
+.section-title {
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 45px;
+}
+
+.product-card {
+    width: 31%;
+
+    min-height: 560px;
+
+    background-color: white;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    margin: 0 1% 35px;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================= IMAGE ================= */
+
+.image-area {
+    position: relative;
+
+    height: 300px;
+}
+
+.image-area img {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+}
+
+
+/* ================= DISCOUNT ================= */
+
+.discount {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    background-color: #dc2626;
+
+    color: white;
+
+    padding: 8px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    z-index: 5;
+}
+
+
+/* ================= NEW ================= */
+
+.new-badge {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    background-color: #16a34a;
+
+    color: white;
+
+    padding: 8px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    z-index: 5;
+}
+
+
+/* ================= HEART ================= */
+
+.heart {
+    position: absolute;
+
+    bottom: 15px;
+    left: 15px;
+
+    width: 42px;
+    height: 42px;
+
+    line-height: 42px;
+
+    text-align: center;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    font-size: 23px;
+
+    color: #dc2626;
+
+    z-index: 5;
+}
+
+
+/* ================= PRODUCT INFO ================= */
+
+.product-info {
+    padding: 22px;
+
+    position: relative;
+}
+
+.product-info h3 {
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+.rating {
+    color: #f59e0b;
+
+    margin-bottom: 15px;
+}
+
+.rating span {
+    color: #777;
+
+    font-size: 13px;
+}
+
+.price {
+    margin-bottom: 20px;
+}
+
+.new-price {
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #6d28d9;
+}
+
+.old-price {
+    color: #999;
+
+    text-decoration: line-through;
+
+    margin-right: 10px;
+}
+
+.cart-button {
+    display: block;
+
+    width: 100%;
+
+    background-color: #6d28d9;
+
+    color: white;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    padding: 13px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.cart-button:hover {
+    background-color: #4c1d95;
+}
+
+
+/* ================= OFFER ================= */
+
+.offer {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 60px auto;
+
+    padding: 70px 30px;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #312e81
+    );
+
+    color: white;
+
+    border-radius: 20px;
+
+    position: relative;
+}
+
+.offer h2 {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.offer p {
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+.coupon {
+    display: inline-block;
+
+    background-color: #fbbf24;
+
+    color: #111827;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.offer-button {
+    display: block;
+
+    width: 180px;
+
+    margin: auto;
+
+    padding: 13px;
+
+    background-color: white;
+
+    color: #312e81;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+
+/* ================= WHATSAPP ================= */
+.whatsapp {
+    position: fixed;
+
+    bottom: 25px;
+    right: 25px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #25D366;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2000;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+    transition: transform 0.3s ease;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+
+
+footer {
+    background-color: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px;
+
+    margin-top: 80px;
+  
+}
+
+footer p {
+    margin: 10px;
+}
+
+
+
